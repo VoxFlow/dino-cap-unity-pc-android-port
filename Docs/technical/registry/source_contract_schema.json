@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "required_contract_fields": [
+    "id",
+    "status",
+    "proposition",
+    "evidence"
+  ],
+  "allowed_status": [
+    "PROVEN",
+    "LIKELY",
+    "OPEN",
+    "FALSIFIED",
+    "SUPERSEDED",
+    "DEBUG_ONLY"
+  ],
+  "evidence_types": [
+    "NATIVE_ARM_BINARY",
+    "RAW_NATIVE_DATA",
+    "EXTRACTED_NATIVE_TABLE",
+    "DECOMPILER",
+    "UNITY_RUNTIME",
+    "UNITY_HEADLESS",
+    "ORIGINAL_DEVICE_VIDEO",
+    "USER_ACCEPTANCE"
+  ],
+  "invariants": [
+    "PROVEN contracts must contain at least one evidence item.",
+    "A heuristic/calibrated value may not be PROVEN.",
+    "A SUPERSEDED contract may not be used as an active implementation oracle.",
+    "OPEN contracts with concrete static leads must list next_static_leads.",
+    "Visual evidence may falsify a semantic mapping but may not choose a production replacement constant."
+  ]
+}

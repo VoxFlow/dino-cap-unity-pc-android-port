@@ -1,0 +1,135 @@
+{
+  "source": "Native iPad19E60 calls1AD48, exact draw-size immediates; not inferred from PNG dimensions",
+  "rows": [
+    {
+      "frame": "Lf3Frame",
+      "width": 115.0,
+      "height": 61.0
+    },
+    {
+      "frame": "Lg4Frame",
+      "width": 109.0,
+      "height": 75.0
+    },
+    {
+      "frame": "Ld3Frame",
+      "width": 127.0,
+      "height": 73.0
+    },
+    {
+      "frame": "Lbullet5Frame",
+      "width": 120.0,
+      "height": 100.0
+    },
+    {
+      "frame": "Lf2Frame",
+      "width": 115.0,
+      "height": 73.0
+    },
+    {
+      "frame": "Lf1Frame",
+      "width": 113.0,
+      "height": 91.0
+    },
+    {
+      "frame": "Le2Frame",
+      "width": 130.0,
+      "height": 80.0
+    },
+    {
+      "frame": "Ld4Frame",
+      "width": 101.0,
+      "height": 101.0
+    },
+    {
+      "frame": "Le1Frame",
+      "width": 129.0,
+      "height": 65.0
+    },
+    {
+      "frame": "Lc1Frame",
+      "width": 80.0,
+      "height": 78.0
+    },
+    {
+      "frame": "Lb2Frame",
+      "width": 115.0,
+      "height": 71.0
+    },
+    {
+      "frame": "Lb1Frame",
+      "width": 150.0,
+      "height": 76.0
+    },
+    {
+      "frame": "Lbullet3Frame",
+      "width": 120.0,
+      "height": 100.0
+    },
+    {
+      "frame": "Lbullet1Frame",
+      "width": 120.0,
+      "height": 100.0
+    },
+    {
+      "frame": "Lbullet2Frame",
+      "width": 120.0,
+      "height": 100.0
+    },
+    {
+      "frame": "Lg2Frame",
+      "width": 131.0,
+      "height": 68.0
+    },
+    {
+      "frame": "Lc2Frame",
+      "width": 75.0,
+      "height": 81.0
+    },
+    {
+      "frame": "Lb3Frame",
+      "width": 152.0,
+      "height": 95.0
+    },
+    {
+      "frame": "Lc3Frame",
+      "width": 125.0,
+      "height": 92.0
+    },
+    {
+      "frame": "Lc4Frame",
+      "width": 103.0,
+      "height": 70.0
+    },
+    {
+      "frame": "Ld2Frame",
+      "width": 138.0,
+      "height": 71.0
+    },
+    {
+      "frame": "LxuepingFrame",
+      "width": 73.0,
+      "height": 86.0
+    },
+    {
+      "frame": "Lbullet4Frame",
+      "width": 120.0,
+      "height": 100.0
+    },
+    {
+      "frame": "Lb4Frame",
+      "width": 137.0,
+      "height": 81.0
+    },
+    {
+      "frame": "Ld1Frame",
+      "width": 143.0,
+      "height": 73.0
+    },
+    {
+      "frame": "Lg3Frame",
+      "width": 132.0,
+      "height": 76.0
+    }
+  ]
+}

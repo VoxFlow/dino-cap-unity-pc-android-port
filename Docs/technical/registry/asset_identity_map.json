@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "project": "Dino Cap 1 Port",
+  "purpose": "Persistent exact identity mapping from native/raw assets/runtime owners to Unity equivalents.",
+  "entries": [
+    {
+      "native_identity": "p_stand.a2b",
+      "kind": "A2B_ANIMATION",
+      "native_owner": "player standing animation",
+      "unity_identity": null,
+      "status": "NEEDS_EXACT_MAPPING"
+    },
+    {
+      "native_identity": "p_move.a2b",
+      "kind": "A2B_ANIMATION",
+      "native_owner": "player movement animation",
+      "unity_identity": null,
+      "status": "NEEDS_EXACT_MAPPING"
+    },
+    {
+      "native_identity": "k1_move.a2b",
+      "kind": "A2B_ANIMATION",
+      "native_owner": "Type1 movement animation",
+      "unity_identity": null,
+      "status": "NEEDS_EXACT_MAPPING"
+    },
+    {
+      "native_identity": "yingzi",
+      "kind": "A2B_PART_NAME",
+      "native_owner": "actor shadow/contact part",
+      "unity_identity": null,
+      "status": "NEEDS_EXACT_MAPPING"
+    },
+    {
+      "native_identity": "p_fire.a2b + F3.c2b (target yyj5, prefix pd)",
+      "kind": "A2B_ANIMATION_PLUS_C2B_PATCH",
+      "native_owner": "player F3 (laser/electrocution) fire pose - single authored 10-frame animation",
+      "unity_identity": "combat_manifest.json animations[] x3: p_fire_F3, p_fire_F3_hold, p_fire_F3_release (all three are exporter-produced deep copies of the SAME merged frame data, differing only in their own frameDuration field)",
+      "status": "EXACT_MAPPING_PROVEN_TASK027N_2_50 (CORRECTED post-reopen - see stale_value_correction below)",
+      "notes": "The three Unity clip names are NOT three separately-authored native assets - see f3_clip_identity_and_timing_n250.json. Native achieves the same 3-phase effect by calling ONE animation-play API (sub_769D0) with 3 different explicit frameDuration arguments (IEEE-754 bit patterns 1028443341=0.05, 1045220557=0.2, 1020054733=0.025) at 3 distinct call sites (sub_667B0 intro entry, sub_663A0 hold re-trigger) - independently cross-validated against the exporter's own already-assigned manifest values, bit-for-bit exact.",
+      "frameDuration_by_phase": {
+        "p_fire_F3": 0.05,
+        "p_fire_F3_hold": 0.2,
+        "p_fire_F3_release": 0.025
+      },
+      "native_bound_by_phase": {
+        "intro": "[0,4] - PROVEN sub_667B0 case5",
+        "hold": "[3,4] repeating (0.4s/cycle) - PROVEN sub_663A0 flag-true branch, start-frame=3 (CORRECTED post-reopen from an initial mis-implementation as [0,4]/1.0s-cycle)",
+        "release": "RESOLVED (was UNRESOLVED) - dual path: normal release plays NO clip at all; an immediate interrupt (melee/weapon-switch/zero-ammo/hurt/death) caught exactly at Frame==4 plays the tail [4,last]; any other interrupt Stop()s immediately. See f3_release_phase_contract_n250.json's own RESOLUTION_N250_REOPEN."
+      },
+      "stale_value_correction": "This entry's own hold/release fields were left stale after TASK027N.2.50's own policy-driven reopen corrected the production implementation and every f3_*_n250.json artifact - this asset_identity_map.json entry was missed in that reconciliation pass and is fixed now (found during TASK027N.2.51's own pre-work SourceTruth read, per CLAUDE.md 4.9's 'search current artifacts for stale wording').",
+      "task": "TASK027N.2.50"
+    },
+    {
+      "native_identity": "iPad house4/house5/house6 templates21BDA8/21BDC0/21BDD8",
+      "kind": "NATIVE_COMPOSITE_CLONE",
+      "native_owner": "sub_2A8A8 0x3dda2/0x3ddf2/0x3de38 -> sub_788E8(house2) -> sub_79064(com1,fangzi4/5/6)",
+      "unity_identity": "CityGridController.BuildingTemplateSkin {0,1,2,1,1,1}",
+      "status": "EXACT_MAPPING_PROVEN",
+      "notes": "Own body fangziNFrame/_aFrame; cloned door leaves/md/md_a from house2, original transforms and frame6 event marker retained.",
+      "task": "DC1-MASTER CG-02 2026-10-09"
+    },
+    {
+      "native_identity": "player+0xD4 house animation family container",
+      "kind": "A2B_ANIMATION_PLUS_C2B_PATCH",
+      "native_owner": "sub_65A08 / sub_7D554 / sub_7D81C; sub_68CD8 playback",
+      "unity_identity": "Power2DSourceTruthRenderer.FindWeaponHouseClip -> p_house_<weapon>",
+      "status": "EXACT_MAPPING_PROVEN",
+      "notes": "Rig p_house for com1 patch; pd_house for yyj5 patch. Full native sub_78A38 merge. Same container for enter0..7 and exit3..last at0.025; F3 yyj5 removed. Raw clips immutable.",
+      "task": "DC1-MASTER CG-04 2026-10-09"
+    },
+    {
+      "native_identity": "text_onFrame",
+      "kind": "LOSSLESS_NATIVE_ATLAS_CROP",
+      "native_owner": "5E144 Options controls18/19",
+      "unity_identity": "Resources/DinoCapGenerated/MainMenu/text_onFrame",
+      "status": "EXACT_MAPPING_PROVEN",
+      "notes": "Dev/Reports/TASK027N_2_51_CityGrindWholeModeClosure/LifecycleVisualMenu/options_toggle_exports.json",
+      "task": "DC1-MASTER/N2.51"
+    },
+    {
+      "native_identity": "text_offFrame",
+      "kind": "LOSSLESS_NATIVE_ATLAS_CROP",
+      "native_owner": "5E144 Options controls18/19",
+      "unity_identity": "Resources/DinoCapGenerated/MainMenu/text_offFrame",
+      "status": "EXACT_MAPPING_PROVEN",
+      "notes": "Dev/Reports/TASK027N_2_51_CityGrindWholeModeClosure/LifecycleVisualMenu/options_toggle_exports.json",
+      "task": "DC1-MASTER/N2.51"
+    },
+    {
+      "native_identity": "HARLOWSI-22",
+      "kind": "NATIVE_TTF_FONT_RASTER_ADAPTER",
+      "native_owner": "1C534/7F74C/16E848/184BA0",
+      "unity_identity": "Resources/Fonts/NativeAmmo glyph0..10 and metrics",
+      "status": "EXACT_SOURCE_FONT_NATIVE_SIZE_RASTER_COMPATIBILITY_PENDING",
+      "notes": "Shipped TTF source hash and host FreeType version recorded in Dev/Reports/TASK027N_2_51_CityGrindWholeModeClosure/LifecycleVisualMenu/native_ammo_font_exports.json.22pt@96DPI; not claimed byte-identical raster output.",
+      "task": "DC1-MASTER/N2.51"
+    },
+    {
+      "native_identity": "helpFrame (menuSceneiPad)",
+      "kind": "SPRITE_FRAME",
+      "native_owner": "61618 control24 tutorial;59DEC ui1Image crop0,0,1024,768",
+      "unity_identity": "help_tutorialFrame",
+      "status": "PROVEN_EXPORTED_TESTED",
+      "source": "Dev/Reports/TASK027N_2_52_RuntimeAB_MenuCity_CausalClosure/help_asset_provenance.json"
+    },
+    {
+      "native_identity": "Dev/Extracted/Data/Audio/Audio_death3.wav",
+      "kind": "NATIVE_WAV",
+      "native_owner": "10294/7A0B0 via7EB04 Audio_death3Audio",
+      "unity_identity": "DC1-Dev/Assets/DinoCap/PortV2/Resources/Audio/Audio_death3.wav",
+      "status": "PROVEN_BYTE_IDENTICAL",
+      "sha256": "50b610bb7e483cb8ca86a6448ee2ec213ae0b28f5f9444f7d80c3803cff3288a",
+      "task": "TASK027N.2.52"
+    }
+  ]
+}

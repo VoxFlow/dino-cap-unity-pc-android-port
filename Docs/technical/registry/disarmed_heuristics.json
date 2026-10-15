@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "project": "Dino Cap 1 Port",
+  "entries": [
+    {
+      "id": "heuristic.actor_transform_y_82",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": 82,
+      "scope": "Unity ActorTransformY",
+      "reason": "Selected by bounded visual calibration in TASK027N.2.42; not native/source-derived.",
+      "allowed_use": "debug/reference placeholder only until exact transform chain closes",
+      "must_not_be_used_as": [
+        "PROVEN",
+        "SOURCE_FAITHFUL",
+        "EXPECTED_TEST_ORACLE"
+      ],
+      "removal_record": "TASK027N.2.48: ../DC1-Dev/Assets/DinoCap/PortV2/Runtime/CityGridController.cs line 258 (now ~275) changed ActorTransformY from 82f to 136.0f (the PROVEN native ActorRootY contract). 82.0 itself is preserved here as history, per CLAUDE.md 4.9, not deleted. If a future task ever needs to compare against the old calibration for regression purposes, this entry remains the authoritative record of that prior value."
+    },
+    {
+      "id": "legacy.ipad_flt_214fd4_minus55",
+      "status": "SUPERSEDED",
+      "value": -55,
+      "reason": "This is the iPhone branch, not the real iPad branch.",
+      "superseded_by": "device.ipad.citygrind.branch"
+    },
+    {
+      "id": "legacy.ipad_flt_214fac_065",
+      "status": "SUPERSEDED",
+      "value": 0.65,
+      "reason": "This is the iPhone branch, not the real iPad branch.",
+      "superseded_by": "device.ipad.citygrind.branch"
+    },
+    {
+      "id": "heuristic.player_death_duration_2f",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": 2,
+      "scope": "CityGridController.cs PlayerDeathDurationSeconds",
+      "reason": "A flat, self-disclosed non-native-derived wait standing in for the unresolved DieEnd timing mechanism.",
+      "allowed_use": "none - fully replaced, not merely disclosed",
+      "must_not_be_used_as": [
+        "PROVEN",
+        "SOURCE_FAITHFUL",
+        "EXPECTED_TEST_ORACLE"
+      ],
+      "removal_record": "TASK027N.2.51 REOPEN: replaced by PlayerDieAnimSeconds=0.775f + PlayerDieEndDelaySeconds=1.0f, both native-derived (see source_contract_registry.json's own citygrind.player_death.timing)."
+    },
+    {
+      "id": "heuristic.shop_fade_seconds_05",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": 0.5,
+      "scope": "CityGridController.cs ShopFadeSeconds",
+      "reason": "A disclosed PLATFORM_ADAPTER placeholder duration since the exact native accumulator rate was not IEEE-754-decoded at the time.",
+      "allowed_use": "none - fully replaced",
+      "must_not_be_used_as": [
+        "PROVEN",
+        "SOURCE_FAITHFUL",
+        "EXPECTED_TEST_ORACLE"
+      ],
+      "removal_record": "TASK027N.2.51 REOPEN: replaced by ShopFadeSeconds=255f/192f=1.328125s, native-derived (sub_55B1C's own state==5/8 accumulator rate and threshold)."
+    },
+    {
+      "id": "heuristic.pause_backdrop_alpha_06",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": 0.6,
+      "scope": "CityGridController.cs pause backdrop alpha",
+      "reason": "Disclosed PLATFORM_ADAPTER visual placeholder since the dim-backdrop's own exact native alpha was not independently IEEE-754-decoded.",
+      "allowed_use": "none - fully replaced",
+      "must_not_be_used_as": [
+        "PROVEN",
+        "SOURCE_FAITHFUL",
+        "EXPECTED_TEST_ORACLE"
+      ],
+      "removal_record": "TASK027N.2.51 REOPEN: replaced by PauseBackdropAlpha=192f/255f, native-derived (see source_contract_registry.json's own citygrind.pause.backdrop_alpha_and_bgm_ownership)."
+    },
+    {
+      "id": "heuristic.level_counter_top_center_placeholder",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": "top-center screen position (approximate)",
+      "scope": "CityGridController.cs DrawLevelCounter() anchor",
+      "reason": "Disclosed PLATFORM_ADAPTER position since the exact native UILevelCtrliPad anchor was not independently re-derived to full pixel certainty.",
+      "allowed_use": "none - fully replaced",
+      "must_not_be_used_as": [
+        "PROVEN",
+        "SOURCE_FAITHFUL",
+        "EXPECTED_TEST_ORACLE"
+      ],
+      "removal_record": "TASK027N.2.51 SECOND REOPEN: replaced by the PROVEN exact anchor (812,447) - see source_contract_registry.json's own citygrind.level_counter.anchor_and_caller."
+    },
+    {
+      "id": "heuristic.hud_proportional_positions_and_shop_compact_popup",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": "proportionally-scaled HUD positions; compact 2D IMGUI shop popup; generic vertical-grid weapon-icon layout",
+      "scope": "CityGridController.cs DrawHUD()/UpdateOnScreenControlsPointerLayer()/DrawOnScreenControls()/DrawShopScreen()",
+      "reason": "Approximate/guessed screen geometry standing in for recoverable exact native rects (HUD bars, all 5 touch-control hit rects), and an invalid PLATFORM_ADAPTER compression of the shop's own PROVEN world-space geometry into an incompatible flat-popup vessel with a generic, unproven icon grid.",
+      "allowed_use": "none - fully replaced",
+      "must_not_be_used_as": [
+        "PROVEN",
+        "SOURCE_FAITHFUL",
+        "EXPECTED_TEST_ORACLE"
+      ],
+      "removal_record": "TASK027N.2.51 SECOND REOPEN: replaced by exact InitFunc_10-derived rects (see citygrind.hud.exact_screen_rects) and a real world-space shop rebuild with exact sub_6CADC-derived per-family icon anchors (see citygrind.shop_screen.entry_trigger_and_layout / citygrind.shop_screen.weapon_icon_anchors)."
+    },
+    {
+      "id": "heuristic.building_entry_jump_arc_60units",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": "60-unit sine arc over DoorAnimSeconds*0.5",
+      "scope": "CityGridController.cs TickBuildings() Entering-phase player Y position",
+      "reason": "TASK027N.2.38-era PLATFORM_ADAPTER guess (no native jump-arc function located at the time). TASK027N.2.51 FIFTH REOPEN fully traced sub_68CD8/sub_CF14 and proved native never writes player position during entry at all - affirmatively contradicted, not merely unresolved.",
+      "allowed_use": "none - removed from production path",
+      "must_not_be_used_as": [
+        "PROVEN",
+        "SOURCE_FAITHFUL",
+        "EXPECTED_TEST_ORACLE"
+      ],
+      "superseded_by": "citygrind.building.player_entry_exit_no_root_transform_motion"
+    },
+    {
+      "id": "heuristic.loot_popup_2s_fade_lifetime",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": 2,
+      "scope": "CityGridController.cs FloatAndFadeLootPopup() (now GrowLootPopup())",
+      "reason": "Disclosed MODERN_VISUAL_ENHANCEMENT placeholder with no native removal timer ever located. TASK027N.2.51 FIFTH REOPEN exhaustively traced sub_D004/sub_F154/sub_EFB4 and found no fade/removal logic anywhere; the popup is a reused per-building slot, not time-removed.",
+      "allowed_use": "none - removed from production path",
+      "must_not_be_used_as": [
+        "PROVEN",
+        "SOURCE_FAITHFUL",
+        "EXPECTED_TEST_ORACLE"
+      ],
+      "superseded_by": "citygrind.building.loot_popup_reused_slot_no_time_removal",
+      "lifecycle_visual_menu_reconciliation": {
+        "canonical": "Dev/Reports/TASK027N_2_51_CityGrindWholeModeClosure/LifecycleVisualMenu/native_contract_corrections.json#popup",
+        "note": "Removal of guessed fade/growth-from-zero remains valid. Per-building slot and fixed50 offset explanations are superseded: one scene-wide slot, physics velocity50."
+      }
+    },
+    {
+      "id": "heuristic.loot_popup_grow_duration_0_2s_from_zero",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": 0.2,
+      "scope": "CityGridController.cs LootPopupGrowDuration constant",
+      "reason": "Assumed growth starts from 0 without checking sub_F154's own initializer. TASK027N.2.51 FIFTH REOPEN found a1[8] initializes to 0.5, making the real duration 0.1s.",
+      "allowed_use": "none - removed from production path",
+      "must_not_be_used_as": [
+        "PROVEN",
+        "SOURCE_FAITHFUL",
+        "EXPECTED_TEST_ORACLE"
+      ],
+      "superseded_by": "citygrind.building.loot_popup_reused_slot_no_time_removal",
+      "lifecycle_visual_menu_reconciliation": {
+        "canonical": "Dev/Reports/TASK027N_2_51_CityGrindWholeModeClosure/LifecycleVisualMenu/native_contract_corrections.json#popup",
+        "note": "Removal of guessed fade/growth-from-zero remains valid. Per-building slot and fixed50 offset explanations are superseded: one scene-wide slot, physics velocity50."
+      }
+    },
+    {
+      "id": "heuristic.hp_refill_icon_size_26x26",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": "26x26",
+      "scope": "CityGridController.cs DrawShopScreen() HP-refill icon rect",
+      "reason": "Unproven guess. TASK027N.2.51 FIFTH REOPEN found icon_bloodFrame's own iPad intrinsic size (Task019_SpriteAtlasRegistry) is PROVEN 152x147.",
+      "allowed_use": "none - removed from production path",
+      "must_not_be_used_as": [
+        "PROVEN",
+        "SOURCE_FAITHFUL",
+        "EXPECTED_TEST_ORACLE"
+      ],
+      "superseded_by": "ShopWeaponIconW/H (152x147)"
+    },
+    {
+      "id": "heuristic.shop_header_and_hp_text_labels",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": "'UPGRADE / SHOP - Level N cleared' + 'cashTotal  HP: X/Y'",
+      "scope": "CityGridController.cs DrawShopScreen()",
+      "reason": "Plain debug-styled GUI.Label text with no traced native text-sprite identity, explicitly disclosed as unfixed in shop_runtime_contradiction_contract.json. TASK027N.2.51 FIFTH REOPEN removed the header (no native counterpart) and converted cash to native numeral sprites; removed the HP readout entirely (no native evidence it exists in the shop).",
+      "allowed_use": "none - removed from production path",
+      "must_not_be_used_as": [
+        "PROVEN",
+        "SOURCE_FAITHFUL",
+        "EXPECTED_TEST_ORACLE"
+      ]
+    },
+    {
+      "id": "heuristic.mainmenu_dino_walk_speed_60",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": 60,
+      "scope": "MainMenuController.cs DinoWalkSpeedPlatformAdapter",
+      "reason": "A disclosed PLATFORM_ADAPTER placeholder speed for the Main Menu background dino, since the exact native velocity constant was not yet recovered at the time (LARGE CONTINUATION 2).",
+      "allowed_use": "none - fully replaced",
+      "must_not_be_used_as": [
+        "PROVEN",
+        "SOURCE_FAITHFUL",
+        "EXPECTED_TEST_ORACLE"
+      ],
+      "removal_record": "TASK027N.2.51 LARGE CONTINUATION 3: replaced by DinoVelocityUnitsPerSecond=20f, native-derived (sub_173A98 call on GameObject::GetPhysics(), fed from a hardcoded 20.0f constant proven identical for both variants via sub_E9628's own 3 near-identical global struct instances)."
+    },
+    {
+      "id": "heuristic.city_hud_integer_screen_scale",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "scope": "GameplayPresentationCamera.ComputeGameViewScreenRect",
+      "reason": "Rounded minimum1 screen scale diverged from actual continuous-fit presentation surface; caused off-screen/clipped HUD on small windows.",
+      "superseded_by": "Same continuous ComputeFitScale mapping as actual presentation surface; display adaptation only",
+      "task": "DC1-MASTER CG convergence 2026-10-09"
+    },
+    {
+      "id": "heuristic.house_enter_p_exit_pd",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "scope": "CityGridController building transition clip selection",
+      "reason": "Asset naming incorrectly inferred direction; native sub_68CD8 uses same family-specific player+0xD4 container for both directions.",
+      "superseded_by": "citygrind.player.house_family_full_c2b_merge",
+      "task": "DC1-MASTER CG convergence 2026-10-09"
+    },
+    {
+      "id": "heuristic.door_signed_width_sliver_clamp",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": 0.02,
+      "scope": "CityGridController native leaf animation width",
+      "reason": "Negative raw authored widths indicate reflected leaf geometry. Replacing them with guessed positive sliver was not native-derived.",
+      "superseded_by": "Signed native Door1W/2W ratios through selected native template",
+      "task": "DC1-MASTER CG convergence 2026-10-09"
+    },
+    {
+      "id": "heuristic.n251.intro_right_flag_is_freeze",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "scope": "N2.51 LifecycleVisualMenu",
+      "reason": "21BE70 is directionRIGHT. Native state4 gates touch/pause; automatic walk during intro is source-backed.",
+      "task": "DC1-MASTER/N2.51",
+      "superseded_by": "Dev/Reports/TASK027N_2_51_CityGrindWholeModeClosure/LifecycleVisualMenu/checkpoint.json"
+    },
+    {
+      "id": "heuristic.n251.menu_level_digits_only",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "scope": "N2.51 LifecycleVisualMenu",
+      "reason": "Generic icon_num centered70-high digits omitted native LEVEL texture and wrong container dimensions.",
+      "task": "DC1-MASTER/N2.51",
+      "superseded_by": "Dev/Reports/TASK027N_2_51_CityGrindWholeModeClosure/LifecycleVisualMenu/checkpoint.json"
+    },
+    {
+      "id": "heuristic.n251.options_static_rows_and_title",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "scope": "N2.51 LifecycleVisualMenu",
+      "reason": "5E144 creates sliding rows and no text_optionFrame title. Difficulty and off-text widths were incorrectly constant/left anchored.",
+      "task": "DC1-MASTER/N2.51",
+      "superseded_by": "Dev/Reports/TASK027N_2_51_CityGrindWholeModeClosure/LifecycleVisualMenu/checkpoint.json"
+    },
+    {
+      "id": "heuristic.n251.ui_enqueue_proves_cross_texture_final_order",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "scope": "N2.51 LifecycleVisualMenu",
+      "reason": "17853C default material batching can reorder different atlas submissions; original clear-vs-fade runtime contradicts enqueue-only conclusion.",
+      "task": "DC1-MASTER/N2.51",
+      "superseded_by": "Dev/Reports/TASK027N_2_51_CityGrindWholeModeClosure/LifecycleVisualMenu/checkpoint.json"
+    },
+    {
+      "id": "heuristic.n251.ammo_font_22_screen_pixels_upper_left",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "scope": "DrawNativeAmmoCounter",
+      "reason": "Native22point font at96DPI and native baseline formula contradicted Unity22pixel upper-left GUIStyle. Visible capture exposed high/clipped counter.",
+      "superseded_by": "citygrind.n251.lifecycle_visual_menu.ammo_native_96dpi_baseline",
+      "task": "DC1-MASTER/N2.51"
+    },
+    {
+      "id": "heuristic.n251.shop_caption_y_used_as_icon_y",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "scope": "ShopWeaponIconWorldY / DrawShopScreen",
+      "reason": "Existing reports incorrectly treated6CADC price-caption positions as icon Y. Fresh visible capture contradicted closure; independent6A4A8 ARM construction proves sharedground+190.",
+      "superseded_by": "citygrind.n251.lifecycle_visual_menu.shop_icon_y_worldtext_geometry",
+      "task": "DC1-MASTER/N2.51"
+    },
+    {
+      "id": "heuristic.n251.shop_white_gui_caption",
+      "status": "REMOVED_FROM_SOURCE_PATH_FOR_WEAPON_PRICES_AND_TIERS",
+      "reason": "Native6A4A8 black22point world-text and18B64C centered glyph geometry contradict white GUIStyle text.",
+      "superseded_by": "citygrind.n251.lifecycle_visual_menu.shop_icon_y_worldtext_geometry",
+      "task": "DC1-MASTER/N2.51"
+    },
+    {
+      "id": "heuristic.house_exit_unfreeze_fraction_0_6",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "value": 0.6,
+      "scope": "CityGridController building exit/control/loot cancellation",
+      "reason": "Native house secondary completion is nullsub; D108 is PRIMARY frame-event+44, marked frame6. Player primary completion is66550, not weapon secondary cadence663A0. Prior nondeterministic/single-fire justification was a wrong vtable mapping.",
+      "superseded_by": "citygrind.house.primary_frame6_player_completion",
+      "task": "DC1-MASTER N2.51 2026-10-10"
+    },
+    {
+      "id": "heuristic.menu_species_k1_k2_substitute",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "reason": "Direct5D00C table loader contradicts old no-writer/inert table claim; nativevariantsk3/k2.",
+      "superseded_by": "menu.background.native_k3_k2_containers"
+    },
+    {
+      "id": "heuristic.menu_roar_waits_until_onscreen",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "reason": "627CC calls Audio_Dino2Audio immediately upon offscreen activation;5D00C owns5s creation pulses.",
+      "superseded_by": "menu.background.five_second_activation_roar"
+    },
+    {
+      "id": "heuristic.f3_every_frame_audio",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "scope": "City and Sandbox F3 discharge audio",
+      "reason": "Consumer66CE8/67CE8 is unconditional but producer76A20 checks CAFrame+40;7D81C marks only secondaryframe3. Every-render-frame/every-secondary-advance audio is unsupported.",
+      "superseded_by": "TASK027N.2.53/f_release_callback_contract.json"
+    },
+    {
+      "id": "heuristic.f_target_minimum_reaction_or_grace_timer",
+      "status": "REMOVED_FROM_SOURCE_PATH",
+      "scope": "City F3 and Sandbox F2/F3 target exit",
+      "reason": "12F28 actual cached effect completion owns attached living target exit;12C64 recovery has no time floor,101A0 loops primary only after completion. Request-age/grace/instant release-body target exits are unsupported.",
+      "superseded_by": "TASK027N.2.53/f_target_exit_probe.json"
+    },
+    {
+      "id": "n255.hypothesis.k2_jump_missing",
+      "status": "SUPERSEDED",
+      "reason": "Initial N255 hypothesis refuted: prefix table was already k3/k1/k2/k4; eligible1/2 never request k2_jump. Redundant binding edit reverted.",
+      "task": "TASK027N.2.55"
+    },
+    {
+      "id": "n254.native_two_jungle_tiles",
+      "status": "SUPERSEDED",
+      "reason": "Native13FD4 creates3 per layer, not2. Native child count corrected; does not resolve left gap.",
+      "task": "TASK027N.2.55"
+    },
+    {
+      "id": "legacy.ipad_camera195_shipped_lag",
+      "status": "FALSIFIED_DEVICE_REGISTRATION",
+      "value": 195,
+      "scope": "Prior Task024E and N255 iPad camera labels",
+      "reason": "C0CE4 registers D2570/D22FC under playerClass (phone),658E4/65674 under playerClassiPad. iPad camera315 exceeds walking205; persistent195/205 lag is a mixed-profile reconstruction error, not an iPad shipped quirk.",
+      "superseded_by": "n255.camera.ipad_registered315",
+      "evidence": "Dev/Reports/TASK027N_2_55_RuntimeContradictions_CityJungle/CameraDeviceProfileCorrection/native_registration_proof.json"
+    }
+  ]
+}

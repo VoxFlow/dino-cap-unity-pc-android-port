@@ -1,0 +1,9 @@
+<linker>
+  <!-- PLATFORM_ADAPTER (build configuration only; no gameplay semantics).
+       GameplayPresentationCamera.EnsureSurface() uses GameObject.CreatePrimitive(Quad),
+       which adds a MeshCollider. IL2CPP engine-code stripping removes the unreferenced
+       Physics module, producing "Can't add component because class 'MeshCollider'
+       doesn't exist!" on Android. Preserving the module keeps behavior identical to
+       the Windows Mono player. Reversible by deleting this file. -->
+  <assembly fullname="UnityEngine.PhysicsModule" preserve="all"/>
+</linker>

@@ -1,0 +1,302 @@
+{
+  "k1": {
+    "rig": "A",
+    "parts": {
+      "tou": {
+        "w": 116,
+        "h": 95,
+        "opaque_px": 6598,
+        "bone_px": 4033,
+        "bone_pct": 61
+      },
+      "xiaba": {
+        "w": 81,
+        "h": 89,
+        "opaque_px": 3380,
+        "bone_px": 1475,
+        "bone_pct": 44
+      },
+      "shen": {
+        "w": 174,
+        "h": 81,
+        "opaque_px": 8849,
+        "bone_px": 3308,
+        "bone_pct": 37
+      },
+      "t1": {
+        "w": 40,
+        "h": 43,
+        "opaque_px": 1426,
+        "bone_px": 428,
+        "bone_pct": 30
+      },
+      "t2": {
+        "w": 44,
+        "h": 21,
+        "opaque_px": 679,
+        "bone_px": 209,
+        "bone_pct": 31
+      },
+      "t3": {
+        "w": 34,
+        "h": 34,
+        "opaque_px": 823,
+        "bone_px": 280,
+        "bone_pct": 34
+      },
+      "t4": {
+        "w": 34,
+        "h": 34,
+        "opaque_px": 966,
+        "bone_px": 216,
+        "bone_pct": 22
+      },
+      "t5": {
+        "w": 37,
+        "h": 17,
+        "opaque_px": 469,
+        "bone_px": 117,
+        "bone_pct": 25
+      },
+      "t6": {
+        "w": 29,
+        "h": 27,
+        "opaque_px": 561,
+        "bone_px": 197,
+        "bone_pct": 35
+      },
+      "zhua": {
+        "w": 34,
+        "h": 43,
+        "opaque_px": 551,
+        "bone_px": 178,
+        "bone_pct": 32
+      }
+    }
+  },
+  "k3": {
+    "rig": "A",
+    "parts": {
+      "tou": {
+        "w": 116,
+        "h": 95,
+        "opaque_px": 6598,
+        "bone_px": 4033,
+        "bone_pct": 61
+      },
+      "xiaba": {
+        "w": 81,
+        "h": 89,
+        "opaque_px": 3380,
+        "bone_px": 1475,
+        "bone_pct": 44
+      },
+      "shen": {
+        "w": 174,
+        "h": 81,
+        "opaque_px": 8849,
+        "bone_px": 3308,
+        "bone_pct": 37
+      },
+      "t1": {
+        "w": 40,
+        "h": 43,
+        "opaque_px": 1426,
+        "bone_px": 428,
+        "bone_pct": 30
+      },
+      "t2": {
+        "w": 44,
+        "h": 21,
+        "opaque_px": 679,
+        "bone_px": 209,
+        "bone_pct": 31
+      },
+      "t3": {
+        "w": 34,
+        "h": 34,
+        "opaque_px": 823,
+        "bone_px": 280,
+        "bone_pct": 34
+      },
+      "t4": {
+        "w": 34,
+        "h": 34,
+        "opaque_px": 966,
+        "bone_px": 216,
+        "bone_pct": 22
+      },
+      "t5": {
+        "w": 37,
+        "h": 17,
+        "opaque_px": 469,
+        "bone_px": 117,
+        "bone_pct": 25
+      },
+      "t6": {
+        "w": 29,
+        "h": 27,
+        "opaque_px": 561,
+        "bone_px": 197,
+        "bone_pct": 35
+      },
+      "zhua": {
+        "w": 34,
+        "h": 43,
+        "opaque_px": 551,
+        "bone_px": 178,
+        "bone_pct": 32
+      }
+    }
+  },
+  "k4": {
+    "rig": "A",
+    "parts": {
+      "tou": {
+        "w": 116,
+        "h": 95,
+        "opaque_px": 6598,
+        "bone_px": 4033,
+        "bone_pct": 61
+      },
+      "xiaba": {
+        "w": 81,
+        "h": 89,
+        "opaque_px": 3380,
+        "bone_px": 1475,
+        "bone_pct": 44
+      },
+      "shen": {
+        "w": 174,
+        "h": 81,
+        "opaque_px": 8849,
+        "bone_px": 3308,
+        "bone_pct": 37
+      },
+      "t1": {
+        "w": 40,
+        "h": 43,
+        "opaque_px": 1426,
+        "bone_px": 428,
+        "bone_pct": 30
+      },
+      "t2": {
+        "w": 44,
+        "h": 21,
+        "opaque_px": 679,
+        "bone_px": 209,
+        "bone_pct": 31
+      },
+      "t3": {
+        "w": 34,
+        "h": 34,
+        "opaque_px": 823,
+        "bone_px": 280,
+        "bone_pct": 34
+      },
+      "t4": {
+        "w": 34,
+        "h": 34,
+        "opaque_px": 966,
+        "bone_px": 216,
+        "bone_pct": 22
+      },
+      "t5": {
+        "w": 37,
+        "h": 17,
+        "opaque_px": 469,
+        "bone_px": 117,
+        "bone_pct": 25
+      },
+      "t6": {
+        "w": 29,
+        "h": 27,
+        "opaque_px": 561,
+        "bone_px": 197,
+        "bone_pct": 35
+      },
+      "zhua": {
+        "w": 34,
+        "h": 43,
+        "opaque_px": 551,
+        "bone_px": 178,
+        "bone_pct": 32
+      }
+    }
+  },
+  "k2": {
+    "rig": "B",
+    "parts": {
+      "tou": {
+        "w": 183,
+        "h": 139,
+        "opaque_px": 14323,
+        "bone_px": 8130,
+        "bone_pct": 57
+      },
+      "xiaba": {
+        "w": 125,
+        "h": 124,
+        "opaque_px": 8741,
+        "bone_px": 3441,
+        "bone_pct": 39
+      },
+      "shen": {
+        "w": 266,
+        "h": 118,
+        "opaque_px": 19377,
+        "bone_px": 8634,
+        "bone_pct": 45
+      },
+      "t1": {
+        "w": 66,
+        "h": 83,
+        "opaque_px": 3777,
+        "bone_px": 1220,
+        "bone_pct": 32
+      },
+      "t2": {
+        "w": 71,
+        "h": 41,
+        "opaque_px": 1890,
+        "bone_px": 464,
+        "bone_pct": 25
+      },
+      "t3": {
+        "w": 67,
+        "h": 52,
+        "opaque_px": 2082,
+        "bone_px": 941,
+        "bone_pct": 45
+      },
+      "t4": {
+        "w": 54,
+        "h": 68,
+        "opaque_px": 2702,
+        "bone_px": 1139,
+        "bone_pct": 42
+      },
+      "t5": {
+        "w": 57,
+        "h": 34,
+        "opaque_px": 1297,
+        "bone_px": 577,
+        "bone_pct": 44
+      },
+      "t6": {
+        "w": 58,
+        "h": 42,
+        "opaque_px": 1492,
+        "bone_px": 689,
+        "bone_pct": 46
+      },
+      "zhua": {
+        "w": 58,
+        "h": 66,
+        "opaque_px": 1610,
+        "bone_px": 753,
+        "bone_pct": 47
+      }
+    }
+  }
+}

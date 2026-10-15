@@ -1,0 +1,120 @@
+{
+  "baseline": 37,
+  "pointSize": 22,
+  "dpi": 96,
+  "glyphs": [
+    {
+      "character": "0",
+      "resource": "Fonts/NativeAmmo/glyph0",
+      "width": 16,
+      "height": 17,
+      "offsetX": 0,
+      "offsetY": -17,
+      "advance": 14,
+      "sha256": "05ef9246ebaf7d878744f6eb4f250cea5b02922f22018c77895cb8eb3a6b13e4"
+    },
+    {
+      "character": "1",
+      "resource": "Fonts/NativeAmmo/glyph1",
+      "width": 15,
+      "height": 17,
+      "offsetX": 0,
+      "offsetY": -17,
+      "advance": 14,
+      "sha256": "df33215201baed74b3934943525f2db2e200a4ae8486f3b9f531bb4b7de3198a"
+    },
+    {
+      "character": "2",
+      "resource": "Fonts/NativeAmmo/glyph2",
+      "width": 15,
+      "height": 17,
+      "offsetX": 0,
+      "offsetY": -17,
+      "advance": 14,
+      "sha256": "1a17a5e75f59844a559c403b082045b0498493eb52939aa53773cf0f81541e55"
+    },
+    {
+      "character": "3",
+      "resource": "Fonts/NativeAmmo/glyph3",
+      "width": 16,
+      "height": 17,
+      "offsetX": 0,
+      "offsetY": -17,
+      "advance": 14,
+      "sha256": "2efb16c38d0833bd6a9b96c5837e81af4abbd99344cba99528a9937521454d5c"
+    },
+    {
+      "character": "4",
+      "resource": "Fonts/NativeAmmo/glyph4",
+      "width": 16,
+      "height": 17,
+      "offsetX": 0,
+      "offsetY": -17,
+      "advance": 14,
+      "sha256": "97228988ac86e6d3357b6d185afb80aac4f484139778ef7cf19c122c19b3caed"
+    },
+    {
+      "character": "5",
+      "resource": "Fonts/NativeAmmo/glyph5",
+      "width": 16,
+      "height": 17,
+      "offsetX": 0,
+      "offsetY": -17,
+      "advance": 14,
+      "sha256": "d67e6b8a9eca68c17463384cce1c5fabe42f8aa3f3fbefdfc92ba91418a4e585"
+    },
+    {
+      "character": "6",
+      "resource": "Fonts/NativeAmmo/glyph6",
+      "width": 15,
+      "height": 17,
+      "offsetX": 0,
+      "offsetY": -17,
+      "advance": 14,
+      "sha256": "9218f8db3f262930df2d4874b230102d3d0510438ad8a0dfad951980c955481f"
+    },
+    {
+      "character": "7",
+      "resource": "Fonts/NativeAmmo/glyph7",
+      "width": 16,
+      "height": 17,
+      "offsetX": 0,
+      "offsetY": -17,
+      "advance": 14,
+      "sha256": "fa254885a70ed99a91bd81af9b8c17f4ef39b58df6a6ce08292e944afba24d9c"
+    },
+    {
+      "character": "8",
+      "resource": "Fonts/NativeAmmo/glyph8",
+      "width": 16,
+      "height": 17,
+      "offsetX": 0,
+      "offsetY": -17,
+      "advance": 14,
+      "sha256": "11b06b4baf304c4bbb26cbeb5fe9d6cb2906c84f7bafb02d28220b182e0b92dc"
+    },
+    {
+      "character": "9",
+      "resource": "Fonts/NativeAmmo/glyph9",
+      "width": 16,
+      "height": 17,
+      "offsetX": 0,
+      "offsetY": -17,
+      "advance": 14,
+      "sha256": "c1efcd0202a22514913ca6b5087b9042f04e884c951cc5544ae06da51a1ccb2a"
+    },
+    {
+      "character": "-",
+      "resource": "Fonts/NativeAmmo/glyph10",
+      "width": 7,
+      "height": 7,
+      "offsetX": 0,
+      "offsetY": -7,
+      "advance": 6,
+      "sha256": "31920e21a7922c48aed6ec780bbcca4592c545771c2518206a553083197ebbc3"
+    }
+  ],
+  "source_sha256": "bcd38770fd6a7ee06aefd84775d741d007e538dd7ac8e27d9bb4bff85232ea5a",
+  "rasterizer": "Pillow host FreeType 2.14.1",
+  "confidence": "Native sizing/baseline formula source-backed; host FreeType raster compatibility requires visual AB, not claimed byte-identical to embedded native FreeType."
+}

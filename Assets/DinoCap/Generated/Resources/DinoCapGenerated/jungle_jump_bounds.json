@@ -1,0 +1,19 @@
+{
+  "source": "Native7854C seeds1024/-1024;780D8 min/max(X+-W*.5);78658 aggregates frames. Task010 proof reused; root3D152 loads k3_jump into21B9BC. Native18858 uses container+16/+20 for jump placement. iPad factor1.0.",
+  "bounds": [
+    {
+      "name": "k3_jump",
+      "minX": -139.5,
+      "maxX": 140.5,
+      "source": "Dev\\Extracted\\Data\\Image\\a2b\\k3_jump.a2b",
+      "sha256": "58aa6b938b7c1a431284c8f317a2a42e2282b077671b9165620405b151a436a7"
+    },
+    {
+      "name": "k1_jump",
+      "minX": -139.5,
+      "maxX": 140.5,
+      "source": "Dev\\Extracted\\Data\\Image\\a2b\\k1_jump.a2b",
+      "sha256": "b4ff2d44e27d58d44979220f454c9d37738054d09f43e1e50a025a1982acc480"
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "sourceSha256": "f6bb982e08323e91f2e1b26d94a99472bb99ec318ac85536489e0f479f1d2562",
+  "intervals": [
+    {
+      "time": 0,
+      "dinos": [
+        {
+          "type": 1,
+          "hp": 13.0,
+          "speed": 50.0,
+          "reward": 20,
+          "frequency": 1.3,
+          "attack": 8.0,
+          "attackDistance": 200.0
+        },
+        {
+          "type": 2,
+          "hp": 5.0,
+          "speed": 50.0,
+          "reward": 17,
+          "frequency": 9999.0,
+          "attack": 10.0,
+          "attackDistance": 200.0
+        },
+        {
+          "type": 3,
+          "hp": 5.0,
+          "speed": 50.0,
+          "reward": 7,
+          "frequency": 9999.0,
+          "attack": 10.0,
+          "attackDistance": 200.0
+        },
+        {
+          "type": 4,
+          "hp": 5.0,
+          "speed": 50.0,
+          "reward": 7,
+          "frequency": 9999.0,
+          "attack": 10.0,
+          "attackDistance": 190.0
+        }
+      ]
+    },
+    {
+      "time": 30,
+      "dinos": [
+        {
+          "type": 1,
+          "hp": 20.0,
+          "speed": 60.0,
+          "reward": 35,
+          "frequency": 1.7,
+          "attack": 10.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 2,
+          "hp": 7.0,
+          "speed": 200.0,
+          "reward": 30,
+          "frequency": 6.0,
+          "attack": 7.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 3,
+          "hp": 5.0,
+          "speed": 50.0,
+          "reward": 7,
+          "frequency": 9999.0,
+          "attack": 10.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 4,
+          "hp": 5.0,
+          "speed": 50.0,
+          "reward": 7,
+          "frequency": 9999.0,
+          "attack": 10.0,
+          "attackDistance": 190.0
+        }
+      ]
+    },
+    {
+      "time": 60,
+      "dinos": [
+        {
+          "type": 1,
+          "hp": 27.0,
+          "speed": 70.0,
+          "reward": 45,
+          "frequency": 2.0,
+          "attack": 13.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 2,
+          "hp": 13.0,
+          "speed": 200.0,
+          "reward": 41,
+          "frequency": 4.5,
+          "attack": 5.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 3,
+          "hp": 5.0,
+          "speed": 50.0,
+          "reward": 7,
+          "frequency": 9999.0,
+          "attack": 10.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 4,
+          "hp": 5.0,
+          "speed": 50.0,
+          "reward": 7,
+          "frequency": 9999.0,
+          "attack": 10.0,
+          "attackDistance": 190.0
+        }
+      ]
+    },
+    {
+      "time": 190,
+      "dinos": [
+        {
+          "type": 1,
+          "hp": 35.0,
+          "speed": 55.0,
+          "reward": 61,
+          "frequency": 2.0,
+          "attack": 15.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 2,
+          "hp": 19.0,
+          "speed": 200.0,
+          "reward": 58,
+          "frequency": 3.0,
+          "attack": 10.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 3,
+          "hp": 5.0,
+          "speed": 50.0,
+          "reward": 7,
+          "frequency": 9999.0,
+          "attack": 10.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 4,
+          "hp": 25.0,
+          "speed": 190.0,
+          "reward": 59,
+          "frequency": 9999.0,
+          "attack": 5.0,
+          "attackDistance": 200.0
+        }
+      ]
+    },
+    {
+      "time": 150,
+      "dinos": [
+        {
+          "type": 1,
+          "hp": 42.0,
+          "speed": 50.0,
+          "reward": 78,
+          "frequency": 2.0,
+          "attack": 12.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 2,
+          "hp": 20.0,
+          "speed": 200.0,
+          "reward": 73,
+          "frequency": 4.0,
+          "attack": 10.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 3,
+          "hp": 45.0,
+          "speed": 30.0,
+          "reward": 90,
+          "frequency": 7.0,
+          "attack": 13.0,
+          "attackDistance": 280.0
+        },
+        {
+          "type": 4,
+          "hp": 30.0,
+          "speed": 50.0,
+          "reward": 77,
+          "frequency": 9999.0,
+          "attack": 10.0,
+          "attackDistance": 200.0
+        }
+      ]
+    },
+    {
+      "time": 200,
+      "dinos": [
+        {
+          "type": 1,
+          "hp": 50.0,
+          "speed": 50.0,
+          "reward": 103,
+          "frequency": 2.0,
+          "attack": 15.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 2,
+          "hp": 25.0,
+          "speed": 200.0,
+          "reward": 90,
+          "frequency": 4.0,
+          "attack": 10.0,
+          "attackDistance": 190.0
+        },
+        {
+          "type": 3,
+          "hp": 60.0,
+          "speed": 30.0,
+          "reward": 120,
+          "frequency": 4.0,
+          "attack": 20.0,
+          "attackDistance": 280.0
+        },
+        {
+          "type": 4,
+          "hp": 36.0,
+          "speed": 50.0,
+          "reward": 87,
+          "frequency": 9999.0,
+          "attack": 10.0,
+          "attackDistance": 200.0
+        }
+      ]
+    }
+  ]
+}

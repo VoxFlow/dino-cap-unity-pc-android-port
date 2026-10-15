@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/DinoCap/Scenes/MainMenuScene.unity
+    guid: ed258fa4b06e485a88cf0d802ddd89e7
+  - enabled: 1
+    path: Assets/DinoCap/Scenes/CombatSandboxV2.unity
+    guid: cce4d8e84ecb5594992cf4d8e311b481
+  - enabled: 1
+    path: Assets/DinoCap/Scenes/CityGrindScene.unity
+    guid: c65c3847c5ab4b288247a8c2f76f00e6
+  - enabled: 1
+    path: Assets/DinoCap/Scenes/JungleBlitzScene.unity
+    guid: 363f4393093c15745bfebef29a8c00b8
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

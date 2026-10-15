@@ -1,0 +1,30 @@
+# Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/.vs/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.utmp
+# Local archive of old notes and test leftovers (not part of the repository)
+/_archive_local/
+# Test/diagnostic outputs
+/TestResults/
+# Backup and temporary files
+*.bak
+*.utmp
+*.tmp
+*.orig
